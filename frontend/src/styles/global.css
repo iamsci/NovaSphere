@@ -1,0 +1,72 @@
+/* Reset & Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Variables for Light & Dark Themes */
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-primary: #2563eb;
+  --color-secondary: #4b5563;
+  --color-border: #e5e7eb;
+}
+
+[data-theme='dark'] {
+  --color-bg: #1f2937;
+  --color-text: #f9fafb;
+  --color-primary: #3b82f6;
+  --color-secondary: #9ca3af;
+  --color-border: #374151;
+}
+
+/* Global Base Styles */
+html,
+body {
+  height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links & Buttons */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Images & Media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none !important;
+}

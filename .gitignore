@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+
+# Environment configs
+.env*
+ 
+# Node dependencies
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# IDEs, logs
+.vscode/
+*.log
